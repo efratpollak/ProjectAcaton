@@ -32,5 +32,4 @@ def startup_db_client():
 def shutdown_db_client():
     app.mongodb_client.close()
 
-
 app.include_router(task_router, tags=["tasks"], prefix="/api/v1/tasks")
